@@ -30,3 +30,4 @@ def solution(lottos, win_nums):
 #win_nums=[20, 9, 3, 45, 4, 35]
 
 #print(solution(lottos,win_nums))
+ 
