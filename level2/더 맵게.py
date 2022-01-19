@@ -4,7 +4,9 @@ K = 7
 import heapq
 def solution(scoville, K):
     answer = 0
-    scoville.sort()
+    heapq.heapify(scoville)
+    #heapq -> 최소 힙 
+    #scoville.sort()
     while scoville[0]<K:
         min1,min2=heapq.heappop(scoville),heapq.heappop(scoville)
         tmp=min1+min2*2
