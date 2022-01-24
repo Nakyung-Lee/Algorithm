@@ -19,4 +19,28 @@ def solution(board, moves):
                         break
     return answer*2
 
+'''
+def solution(board, moves):
+    stack=[]
+    answer = 0
+    
+    # for i in moves
+    
+    for i in moves:      
+        for j in range(len(board)):
+        
+            # j // i
+            
+            if j+1==i:
+                if board[j][i-1] != 0:
+                    stack.append(board[j][i-1])
+                    board[j][i-1]=0
+                    if len(stack)>=2 and stack[-1]==stack[-2]:
+                        stack.pop()
+                        stack.pop()
+                        answer+=2
+                    break
+    return answer
+
+'''
 print(solution(board,moves))
