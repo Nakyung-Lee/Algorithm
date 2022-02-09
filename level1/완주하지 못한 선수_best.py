@@ -1,4 +1,20 @@
 '''
+딕셔너리 (내 풀이)
+def solution(participant, completion):
+    dic = {}
+    for part in participant:
+        dic[part] = 0
+    for part in participant:
+        dic[part] += 1
+    for com in completion:
+        if com in dic.keys():
+            dic[com]-=1
+    for d in dic:
+        if dic[d]>=1:
+            return d
+'''
+
+'''
 ** 해시 구조 **
 키(Key)와 값(Value)쌍으로 이루어진 데이터 구조
 Key를 이용하여 데이터를 찾으므로, 속도를 빠르다
