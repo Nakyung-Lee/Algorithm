@@ -2,6 +2,10 @@
 record=["Enter uid0606 Gimoi", "Enter uid4567 Prodo", "Leave uid0606", "Enter uid1234 Prodo", "Change uid1234 OhYeah"]
 
 '''
+반복문 대신 딕셔너리 사용 시간초과 해결
+'''
+
+'''
 해당 방법 시도 -> 75점 (시간 초과)
 def solution(record):
     answer = []
@@ -34,7 +38,7 @@ def solution(record):
 '''
 딕셔너리 사용
 변경할 때 an 딕셔너리에서 해당 id값을 key로 갖는 value 모두 변경 가능 
-                                      -> 해당 부분에서반복문을 사용X -> 시간 초과 해결
+                                      -> 해당 부분에서 반복문을 사용X -> 시간 초과 해결
 '''
 def solution(record):
     answer = []
