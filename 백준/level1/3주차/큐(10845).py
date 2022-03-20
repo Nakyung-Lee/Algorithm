@@ -9,7 +9,8 @@ for i in range(n):
 
     if cmd[0]=="push":
         queue.append(cmd[1])
-
+    
+    #큐에서 가장 앞에 있는 정수를 빼고 출력
     elif cmd[0]=="pop":
         if len(queue)==0:
             print(-1)
