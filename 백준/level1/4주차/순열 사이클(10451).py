@@ -20,7 +20,9 @@ for i in range(n):
     m=int(input())
     visited = [0] * (m+1)
     
-    #s에 곧바로 배열 입력할 때 [0]+ ~~ 
+    #s에 곧바로 배열 입력할 때 [0]+ ~~
+    #0 1 2 3 4 5 6 7 인덱스 바로 사용 가능
+    #인덱스 -> 배열 값 바로 연결 가능
     s=[0]+(list(map(int, sys.stdin.readline().split())))
     
     for i in range(1,m+1):
