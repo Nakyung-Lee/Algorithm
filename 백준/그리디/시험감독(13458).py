@@ -8,7 +8,7 @@ num=list(map(int,sys.stdin.readline().split()))
 b,c = map(int,sys.stdin.readline().split())
 
 
-#총 감독과 1명씩 (시험장 수만큼)
+#총 감독관 1명씩 (시험장 수만큼)
 cnt=N
 
 for x in num:
