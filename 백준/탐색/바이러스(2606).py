@@ -1,5 +1,5 @@
 from collections import deque
-from sys import stdin
+import sys
 
 n = int(input()) # 컴퓨터의 수
 m = int(input()) # 연결된 수
@@ -8,7 +8,7 @@ m = int(input()) # 연결된 수
 graph = [[0] * (n+1) for _ in range(n+1)] 
 
 for _ in range(m):
-    x, y = map(int, stdin.readline().split())
+    x, y = map(int, sys.stdin.readline().split())
     graph[x][y] = 1
     graph[y][x] = 1
 
